@@ -1,0 +1,540 @@
+/* ===== CSS Variables ===== */
+:root {
+    --primary: #FF6B35;
+    --secondary: #004E89;
+    --dark: #2F4858;
+    --light: #F7F9FC;
+    --white: #FFFFFF;
+    --gray: #E0E0E0;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    overflow-x: hidden;
+    position: relative;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #E05B2B;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Header Styles ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.phone-cta {
+    display: flex;
+    align-items: center;
+    background: var(--secondary);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.phone-cta i {
+    margin-right: 8px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--dark);
+}
+
+.parts-search {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.parts-search input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 50px 0 0 50px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.parts-search button {
+    border-radius: 0 50px 50px 0;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ===== Floating Parts Animation ===== */
+.floating-part {
+    position: fixed;
+    opacity: 0.1;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 15s infinite linear;
+    width: 120px;
+    height: 120px;
+}
+
+#floatingEngine {
+    background-image: url('images/engine-icon.png');
+    top: 20%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+#floatingTransmission {
+    background-image: url('images/transmission-icon.png');
+    top: 60%;
+    left: 80%;
+    animation-delay: 3s;
+    width: 100px;
+    height: 100px;
+}
+
+#floatingAlternator {
+    background-image: url('images/alternator-icon.png');
+    top: 30%;
+    left: 70%;
+    animation-delay: 6s;
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* ===== Categories Section ===== */
+.categories {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-icon {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-icon img {
+    max-height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-icon img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.category-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* ===== Featured Parts ===== */
+.featured {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.parts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.part-card {
+    background: var(--light);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.part-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.part-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.part-image {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.part-image img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.part-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.part-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+/* ===== Warranty Section ===== */
+.warranty {
+    padding: 80px 0;
+    background: linear-gradient(rgba(0, 78, 137, 0.9), rgba(0, 78, 137, 0.9)), url('images/warranty-bg.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.warranty-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.warranty h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.warranty-list {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.warranty-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.warranty-list i {
+    color: var(--primary);
+}
+
+/* ===== Footer ===== */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.footer-col address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.footer-col i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--primary);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+}
+
+.phone-link {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: var(--shadow);
+        padding: 20px;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .parts-search {
+        flex-direction: column;
+    }
+
+    .parts-search input {
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .parts-search button {
+        border-radius: 50px;
+        justify-content: center;
+    }
+}

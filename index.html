@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brantford Auto Parts | Quality Used Parts with Warranty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="floating-part" id="floatingEngine"></div>
+    <div class="floating-part" id="floatingTransmission"></div>
+    <div class="floating-part" id="floatingAlternator"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Brantford Auto Wrecking & Salvage</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#inventory">Inventory</a></li>
+                    <li><a href="#warranty">Warranty</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="tel:5197743338" class="phone-cta">
+                            <i class="fas fa-phone-alt"></i>
+                            519-774-3338
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-slideshow">
+            <div></div> <!-- hero-bg1.jpg -->
+            <div></div> <!-- hero-bg2.jpg -->
+            <div></div> <!-- hero-bg3.jpg -->
+            <div></div> <!-- hero-bg4.jpg -->
+            <div></div> <!-- hero-bg5.jpg -->
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Your Title Here</h1>
+            <p class="subtitle">Your subtitle here</p>
+            <div class="parts-search">
+                <input type="text" placeholder="Search parts...">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parts Categories -->
+    <section class="categories" id="inventory">
+        <div class="container">
+            <h2 class="section-title">Shop by <span class="highlight">Category</span></h2>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="images/engine-icon.png" alt="Engine icon" loading="lazy">
+                    </div>
+                    <h3>Engines</h3>
+                    <p>Tested & warrantied</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="images/transmission-icon.png" alt="Transmission icon" loading="lazy">
+                    </div>
+                    <h3>Transmissions</h3>
+                    <p>Low mileage units</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="images/alternator-icon.png" alt="Alternator icon" loading="lazy">
+                    </div>
+                    <h3>Electrical</h3>
+                    <p>Alternators & starters</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Parts -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">This Week's <span class="highlight">Hot Deals</span></h2>
+            <div class="parts-grid" id="partsGrid">
+                <!-- Parts will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty Section -->
+    <section class="warranty" id="warranty">
+        <div class="container">
+            <div class="warranty-card">
+                <h2><span class="highlight">90-Day Warranty</span> on All Parts</h2>
+                <ul class="warranty-list">
+                    <li><i class="fas fa-check-circle"></i> Free replacement if defective</li>
+                    <li><i class="fas fa-check-circle"></i> No-hassle returns</li>
+                    <li><i class="fas fa-check-circle"></i> Parts testing available</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Brantford Auto Parts</h3>
+                    <address>
+                        <i class="fas fa-map-marker-alt"></i> 44 German School Rd, Paris, ON, N3L 3E1<br>
+                        <i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM, Sat: 9AM-4PM
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#inventory">Browse Parts</a></li>
+                            <li><a href="#warranty">Warranty Info</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="tel:5197743338" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            519-774-3338
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Brantford Auto Parts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
