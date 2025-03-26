@@ -615,7 +615,7 @@ header .container {
 /* ===== Warranty Section ===== */
 .warranty {
     padding: 80px 0;
-    background: linear-gradient(rgba(0, 78, 137, 0.9), rgba(0, 78, 137, 0.9)), url('images/warranty-bg.jpg');
+    background: linear-gradient(rgba(0, 78, 137, 0.9), rgba(0, 78, 137, 0.9)), url('images/cars.jpg');
     background-size: cover;
     background-position: center;
     color: white;
