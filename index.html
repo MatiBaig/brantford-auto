@@ -3,40 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brantford Auto Parts | Quality Used Parts with Warranty</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Brantford Auto Wrecking & Salvage</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Animated Background Elements -->
-    <div class="floating-part" id="floatingEngine"></div>
-    <div class="floating-part" id="floatingTransmission"></div>
-    <div class="floating-part" id="floatingAlternator"></div>
-
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
         <div class="container">
-            <div class="logo">Brantford Auto Wrecking & Salvage</div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="nav-links" id="navLinks">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="Brantford Auto Wrecking & Salvage">
+            </a>
+            <nav class="nav-links">
                 <ul>
-                    <li><a href="#inventory">Inventory</a></li>
-                    <li><a href="#warranty">Warranty</a></li>
-                    <li><a href="#testimonials">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <a href="tel:5197743338" class="phone-cta">
-                            <i class="fas fa-phone-alt"></i>
-                            519-774-3338
-                        </a>
-                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <a href="tel:+1234567890" class="phone-cta"><i class="fas fa-phone"></i> Call Us</a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>
     </header>
 
@@ -51,108 +45,243 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Your Title Here</h1>
-            <p class="subtitle">Your subtitle here</p>
-            <div class="parts-search">
-                <input type="text" placeholder="Search parts...">
-                <button class="btn">Search</button>
-            </div>
+            <h1>Welcome to <span class="highlight">Brantford Auto Wrecking & Salvage</span></h1>
+            <p class="subtitle">Your trusted source for quality auto parts and salvage services.</p>
         </div>
     </section>
 
-    <!-- Parts Categories -->
-    <section class="categories" id="inventory">
+    <!-- New Parts-->
+    <section class="categories">
         <div class="container">
-            <h2 class="section-title">Shop by <span class="highlight">Category</span></h2>
+            <h2 class="section-title">New Parts</h2>
             <div class="category-grid">
                 <a href="#" class="category-card">
                     <div class="category-icon">
-                        <img src="images/engine-icon.png" alt="Engine icon" loading="lazy">
+                        <img src="/images/battery.jpg" alt="Engines">
+                    </div>
+                    <h3>Battery</h3>
+                    <p>High-performance engines for all vehicle types.</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="/images/filter.jpg" alt="Transmissions">
+                    </div>
+                    <h3>Air Filter</h3>
+                    <p>Reliable transmissions for smooth driving.</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="/images/spark-plug.jpg" alt="Alternators">
+                    </div>
+                    <h3>Spark Plug</h3>
+                    <p>Keep your vehicle powered with quality alternators.</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="/images/brakes.jpg" alt="Brakes">
+                    </div>
+                    <h3>Brakes</h3>
+                    <p>Top-notch brake systems for safety.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Used Parts -->
+     <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Used Parts</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="images/engine-icon.png" alt="Engines">
                     </div>
                     <h3>Engines</h3>
-                    <p>Tested & warrantied</p>
+                    <p>High-performance engines for all vehicle types.</p>
                 </a>
                 <a href="#" class="category-card">
                     <div class="category-icon">
-                        <img src="images/transmission-icon.png" alt="Transmission icon" loading="lazy">
+                        <img src="images/transmission-icon.png" alt="Transmissions">
                     </div>
                     <h3>Transmissions</h3>
-                    <p>Low mileage units</p>
+                    <p>Reliable transmissions for smooth driving.</p>
                 </a>
                 <a href="#" class="category-card">
                     <div class="category-icon">
-                        <img src="images/alternator-icon.png" alt="Alternator icon" loading="lazy">
+                        <img src="images/alternator-icon.png" alt="Alternators">
                     </div>
-                    <h3>Electrical</h3>
-                    <p>Alternators & starters</p>
+                    <h3>Alternators</h3>
+                    <p>Keep your vehicle powered with quality alternators.</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <img src="/images/tire.jpg" alt="Brakes">
+                    </div>
+                    <h3>Tires</h3>
+                    <p>Top-notch brake systems for safety.</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Featured Parts -->
-    <section class="featured">
+    <!-- Testimonials Section -->
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">This Week's <span class="highlight">Hot Deals</span></h2>
-            <div class="parts-grid" id="partsGrid">
-                <!-- Parts will be loaded via JavaScript -->
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-card active">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="John D." class="avatar">
+                        <blockquote>"The parts I ordered arrived quickly and were exactly as described. Amazing service!"</blockquote>
+                        <cite>- John D., Mechanic</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="Sarah M." class="avatar">
+                        <blockquote>"Best prices I’ve found online, and the quality is top-notch. Highly recommend!"</blockquote>
+                        <cite>- Sarah M., Car Enthusiast</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="Mike R." class="avatar">
+                        <blockquote>"Customer support went above and beyond to help me find the right part. Fantastic experience!"</blockquote>
+                        <cite>- Mike R., Shop Owner</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="Emily T." class="avatar">
+                        <blockquote>"Fast shipping and great communication. My go-to for auto parts now!"</blockquote>
+                        <cite>- Emily T., DIY Mechanic</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="Carlos V." class="avatar">
+                        <blockquote>"The selection is unbeatable, and the parts fit perfectly. Awesome site!"</blockquote>
+                        <cite>- Carlos V., Truck Driver</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="Lisa K." class="avatar">
+                        <blockquote>"Saved me a ton of money on repairs. Will definitely shop here again!"</blockquote>
+                        <cite>- Lisa K., Mom of Three</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="David P." class="avatar">
+                        <blockquote>"Reliable parts and excellent warranty. Couldn’t ask for more!"</blockquote>
+                        <cite>- David P., Fleet Manager</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" alt="Anna S." class="avatar">
+                        <blockquote>"Super easy to navigate the site, and the delivery was lightning fast!"</blockquote>
+                        <cite>- Anna S., Hobbyist</cite>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <span class="testimonial-dot active"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Warranty Section -->
-    <section class="warranty" id="warranty">
-        <div class="container">
-            <div class="warranty-card">
-                <h2><span class="highlight">90-Day Warranty</span> on All Parts</h2>
-                <ul class="warranty-list">
-                    <li><i class="fas fa-check-circle"></i> Free replacement if defective</li>
-                    <li><i class="fas fa-check-circle"></i> No-hassle returns</li>
-                    <li><i class="fas fa-check-circle"></i> Parts testing available</li>
-                </ul>
-            </div>
+   
+
+    <!-- Services -->
+    <section class="warranty">
+        <div class="warranty-card">
+            <h2>Our Services</h2>
+            <ul class="warranty-list">
+                <li><i class="fas fa-check-circle"></i> Tire Change</li>
+                <li><i class="fas fa-check-circle"></i> Oil Change</li>
+                <li><i class="fas fa-check-circle"></i> Engine and Transmission change</li>
+            </ul>
+            <a href="#" class="btn">Learn More</a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
+    <!-- Footer Section -->
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>Brantford Auto Parts</h3>
+                    <h3>About Us</h3>
+                    <p>Brantford Auto Wrecking & Salvage is your trusted source for quality auto parts and salvage services. We’ve been serving the community for over 20 years.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
                     <address>
                         <i class="fas fa-map-marker-alt"></i> 44 German School Rd, Paris, ON, N3L 3E1<br>
-                        <i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM, Sat: 9AM-4PM
+                        <i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (519) 774-3338</a><br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:info@brantfordauto.com">info@brantfordauto.com</a>
                     </address>
                 </div>
                 <div class="footer-col">
                     <h3>Quick Links</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="#inventory">Browse Parts</a></li>
-                            <li><a href="#warranty">Warranty Info</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                        </ul>
-                    </nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Parts Catalog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
                 <div class="footer-col">
-                    <h3>Connect</h3>
+                    <h3>Follow Us</h3>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="tel:5197743338" class="phone-link">
-                            <i class="fas fa-phone-alt"></i>
-                            519-774-3338
-                        </a>
+                        <a href="tel:+1234567890" class="phone-link"><i class="fas fa-phone"></i> +1 (519) 774-3338</a>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2025 Brantford Auto Parts. All rights reserved.</p>
+                © 2025 Brantford Auto Wrecking & Salvage. All rights reserved.
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript for Testimonial Slider and Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Testimonial Slider
+            const slider = document.querySelector('.testimonial-slider');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const dots = document.querySelectorAll('.testimonial-dot');
+            let currentIndex = 0;
+
+            function updateSlider() {
+                cards.forEach(card => card.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                cards[currentIndex].classList.add('active');
+                dots[currentIndex].classList.add('active');
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            // Auto-slide every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % cards.length;
+                updateSlider();
+            }, 5000);
+
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider();
+                });
+            });
+
+            // Initial setup
+            updateSlider();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
